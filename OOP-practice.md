@@ -36,7 +36,7 @@ bulb.turn_off()
 **Практика 1: «Кликер»**
 Создай класс `Clicker`. Метод `start(self)` задает `self.score = 0`. Метод `click(self)` увеличивает `self.score` на 1.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -53,7 +53,7 @@ class Clicker:
 **Практика 2: «Кот-тамагочи»**
 Создай класс `Cat`. Метод `wake_up(self)` делает `self.is_hungry = True`. Метод `feed(self)` меняет `self.is_hungry` на `False`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -71,7 +71,7 @@ class Cat:
 **Практика 3: «Музыкальный плеер»**
 Создай класс `Player`. Метод `play(self)` задает `self.status = "playing"`, а `pause(self)` задает `self.status = "paused"`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -91,7 +91,7 @@ class Player:
 **Демо-задача: «Космический корабль»**
 Класс `Spaceship`. Метод `refuel(self, amount)` добавляет топливо в `self.fuel` (изначально нужно задать 0). Метод `fly(self, distance)` тратит топливо (1 ед. на 10 км) и увеличивает `self.mileage`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -118,7 +118,7 @@ class Spaceship:
 **Практика 1: «Копилка»**
 Класс `PiggyBank`. Метод `set_empty(self)` делает `self.coins = 0`. Метод `add_coin(self, value)` добавляет монеты. Метод `break_bank(self)` возвращает все монеты и обнуляет счетчик.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -140,7 +140,7 @@ class PiggyBank:
 **Практика 2: «Здоровье персонажа»**
 Класс `Hero`. Метод `spawn(self)` дает `self.hp = 100`. Метод `take_damage(self, damage)` уменьшает ХП, а `heal(self, amount)` — увеличивает.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -161,7 +161,7 @@ class Hero:
 **Практика 3: «Кондиционер»**
 Класс `AirConditioner`. Метод `turn_on(self)` задает `self.temp = 22`. Методы `warmer(self)` и `cooler(self)` меняют температуру на 1 градус.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -184,7 +184,7 @@ class AirConditioner:
 **Демо-задача: «Кофемашина»**
 Класс `CoffeeMachine`. Метод `fill(self, water, beans)` пополняет запасы. Метод `make_coffee(self)` проверяет: нужно 200 мл воды и 20 г зерен. Если хватает — варит кофе, если нет — выдает ошибку. Перед использованием вызови `setup()` для создания пустых запасов.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -210,7 +210,7 @@ class CoffeeMachine:
 **Практика 1: «Продвинутый тамагочи»**
 Доработай класс `Hero` (назовем его `AdvancedCat`). Вызови `spawn()`. ХП не может быть больше 100. Если при методе `take_damage` ХП падает ниже 0, кот падает в обморок (создается `self.is_fainted = True`).
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -236,7 +236,7 @@ class AdvancedCat:
 **Практика 2: «Принтер»**
 Класс `Printer`. Создай `setup(self, paper, ink)`. Метод `print_page(self, text)` считает символы в тексте (`len(text)`). Каждый символ тратит 1 ед. краски, печать — 1 лист бумаги. Добавь проверки ресурсов.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -259,7 +259,7 @@ class Printer:
 **Практика 3: «Снайперская винтовка»**
 Класс `SniperRifle`. Метод `reload(self)` дает 5 патронов (`self.ammo = 5`). Метод `shoot(self)` проверяет патроны: если есть — стреляет ("Бах!") и тратит патрон, если нет — пишет "Щелк!".
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -287,7 +287,7 @@ class SniperRifle:
 **Демо-задача: «Паспорт игрока»**
 Класс `PlayerProfile`. В `__init__(self, nickname, level)` задаются имя и уровень. Создай объект: `player1 = PlayerProfile("Ninja", 10)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -304,7 +304,7 @@ player1 = PlayerProfile("Ninja", 10)
 **Практика 1: «Автомобиль»**
 Класс `Car`. При создании (`__init__`) принимает `brand` и `color`. Атрибут `speed` всегда равен 0 по умолчанию.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -319,7 +319,7 @@ class Car:
 **Практика 2: «Собака»**
 Класс `Dog`. Принимает `name` и `breed`. Выведи их на экран при создании, вызвав внутри `__init__` метод `bark(self)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -337,7 +337,7 @@ class Dog:
 **Практика 3: «Ноутбук»**
 Класс `Laptop`. В `__init__` задается `model`, а заряд батареи `self.battery` автоматически устанавливается на 100.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -353,7 +353,7 @@ class Laptop:
 **Демо-задача: «Игровой инвентарь»**
 Класс `Inventory`. В `__init__(self, capacity)` задается вместимость и создается пустой список `self.items = []`. Напиши `add_item(self, item)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -374,7 +374,7 @@ class Inventory:
 **Практика 1: «Магазин»**
 Класс `Shop`. В `__init__` задается название магазина и создается пустой словарь `self.products` (ключ - товар, значение - цена).
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -391,7 +391,7 @@ class Shop:
 **Практика 2: «Чат-комната»**
 Класс `ChatRoom`. При создании задается `room_name`, пустой список `self.users` и пустой список `self.messages`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -406,7 +406,7 @@ class ChatRoom:
 **Практика 3: «Робот-пылесос»**
 Класс `RobotVacuum`. Принимает `model`. Имеет атрибуты по умолчанию: `self.trash_collected = 0` и `self.is_cleaning = False`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -423,7 +423,7 @@ class RobotVacuum:
 **Демо-задача: «Регистрация на сервере»**
 Класс `ServerAccount`. В `__init__(self, username, age)`. Если `age < 13`, атрибуту `self.is_restricted` присваивается `True`, иначе `False`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -441,7 +441,7 @@ class ServerAccount:
 **Практика 1: «Генератор паролей»**
 Класс `PasswordManager`. В `__init__` принимает пароль. Если пароль короче 8 символов, заменяет его на `"qwerty1234"` и выводит предупреждение.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -458,7 +458,7 @@ class PasswordManager:
 **Практика 2: «Боевой маг»**
 Класс `Mage`. Принимает `element`. Если это не "огонь", "вода" или "земля", по умолчанию ставится "обычная магия".
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -475,7 +475,7 @@ class Mage:
 **Практика 3: «Бронирование билета»**
 Класс `Ticket`. Принимает `place_number`. Если номер меньше 1 или больше 50, пишет ошибку и ставит место 0. Иначе сохраняет номер.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -499,7 +499,7 @@ class Ticket:
 **Демо-задача: «Сейф»**
 Класс `Safe`. В `__init__` создается приватный атрибут `self.__code = "1234"`. Напиши публичный метод `open_safe(self, try_code)`, который сравнивает коды.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -518,7 +518,7 @@ class Safe:
 **Практика 1: «Дневник с секретом»**
 Класс `SecretDiary`. Текст хранится в `self.__text` (задай при создании). Прочитать его можно только через метод `read(self, password)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -538,7 +538,7 @@ class SecretDiary:
 **Практика 2: «Пин-код телефона»**
 Класс `Phone`. Приватный `self.__pin`. Публичный `unlock(self, pin)` возвращает `True`, если пин совпал, и `False`, если нет.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -554,7 +554,7 @@ class Phone:
 **Практика 3: «Шпионский жучок»**
 Класс `BugDevice`. Частота `self.__frequency` задается в `__init__`. Изменить ее нельзя, можно получить через `get_frequency(self)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -572,7 +572,7 @@ class BugDevice:
 **Демо-задача: «Сетевой роутер»**
 Класс `Router`. Public `model`, protected `_ip_address` и private `__admin_password`. Создай `connect(self, password)`, проверяющий пароль перед выдачей IP.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -592,7 +592,7 @@ class Router:
 **Практика 1: «Криптокошелек»**
 Класс `CryptoWallet`. Баланс public, ключ `__private_key`. Напиши защищенный метод `_sign_transaction()`, используемый только внутри `send_money(self)`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -615,7 +615,7 @@ class CryptoWallet:
 **Практика 2: «Мотор автомобиля»**
 Класс `Engine`. Публичный `start()`. Внутри он вызывает приватный `__inject_fuel()`, который пользователь не должен запускать вручную.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -632,7 +632,7 @@ class Engine:
 **Практика 3: «Банкомат»**
 Класс `ATM`. Приватный `__total_money`. Публичный `withdraw(self, amount)`, который выдает деньги, только если внутри хватает купюр.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -654,7 +654,7 @@ class ATM:
 **Демо-задача: «Игровой аккаунт»**
 Класс `GameAccount`. Приватный `__level` (изначально 1). Методы `get_level(self)` и `add_xp(self, xp)`. Уровень нельзя изменить напрямую, он растет (на 1 за каждые 100 XP), если вызван `add_xp`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -679,7 +679,7 @@ class GameAccount:
 **Практика 1: «Ядерный реактор»**
 Класс `Reactor`. Приватная `__temperature` (изначально 0). Методы `get_temp()` и `increase_power(amount)`. Если `__temperature` > 1000, вызывается `__emergency_shutdown()`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -704,7 +704,7 @@ class Reactor:
 **Практика 2: «Банковский счет»**
 Класс `BankAccount`. Приватный `__balance`. Метод `deposit(self, amount)` кладет деньги (> 0). `withdraw(self, amount)` — снимает (если сумма меньше баланса).
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
@@ -727,7 +727,7 @@ class BankAccount:
 **Практика 3: «Температурный датчик»**
 Класс `Sensor`. Приватный `__celsius`. Публичные методы: `set_temperature(self, value)` не принимает ниже -273, и `get_fahrenheit(self)` возвращает в Фаренгейтах `(C * 9/5) + 32`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
