@@ -12,7 +12,7 @@
 **Демо-задача: «Умная лампочка»**
 Создай класс `SmartBulb`. Напиши метод `turn_on(self)`, который создает атрибут `self.is_on = True`, и метод `turn_off(self)`, который делает `self.is_on = False`.
 
-<details>
+<details markdown="1">
 <summary>💡 Посмотреть решение</summary>
 
 ```python
